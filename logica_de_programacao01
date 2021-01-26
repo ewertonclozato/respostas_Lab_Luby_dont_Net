@@ -1,5 +1,5 @@
 // 5! = 5 · 4 · 3 · 2 · 1 = 120
-CalcularFatorial(n){
+CalcularFatorial(int n){
 
       n=5;
       int resultado = 1;
