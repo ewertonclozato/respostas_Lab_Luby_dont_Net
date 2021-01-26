@@ -1,1 +1,6 @@
-
+        SELECT
+            tbp.nome as 'Nome'
+        FROM
+            tabela_pessoa as tbp
+        WHERE
+            tbp.nome LIKE "%Doe%"
