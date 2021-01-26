@@ -1,0 +1,32 @@
+void CalcularPremio(double valor, string tipo, double fator)
+            {
+                if (fator != 0)
+                {
+                    valor = valor * fator;
+                }
+                else
+                {
+                    double t = 0;
+                    if (tipo == "basic")
+                    {
+                        t = 1;
+                    }
+                    else if (tipo == "vip")
+                    {
+                        t = 1.2;
+                    }
+                    else if (tipo == "premium")
+                    {
+                        t = 1.5;
+                    }
+                    else if (tipo == "deluxe")
+                    {
+                        t = 1.8;
+                    }
+                    else if (tipo == "special")
+                    {
+                        t = 2;
+                    }
+                    valor = valor * t;
+                }
+            }
