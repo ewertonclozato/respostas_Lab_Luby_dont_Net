@@ -1,0 +1,4 @@
+    ALTER TABLE 
+        tabela_pessoa 
+    ADD
+        idade INTEGER(3);
