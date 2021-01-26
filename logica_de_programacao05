@@ -1,0 +1,8 @@
+string CalcularValorComDescontoFormatado(double valor, double desc)
+            {
+                string resultado;
+                desc = desc / 100;
+                valor -= valor*desc ;
+                resultado = valor.ToString();
+                return resultado;
+            }
