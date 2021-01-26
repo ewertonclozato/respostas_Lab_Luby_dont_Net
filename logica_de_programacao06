@@ -1,0 +1,10 @@
+int CalcularDiferencaData(string data1, string data2)
+            {
+                int diferenca = 0;
+                DateTime dt1 = DateTime.ParseExact(data1, "ddMMyyyy", null);
+                DateTime dt2 = DateTime.ParseExact(data2, "ddMMyyyy", null);
+                //diferenca = int.Parse(dt1.ToString()) - int.Parse(dt2.ToString());
+                diferenca = (int)dt2.Subtract(dt1).TotalDays;
+
+                return diferenca;
+            }
