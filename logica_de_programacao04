@@ -1,0 +1,55 @@
+int CalcularVogais(string frase)
+            {
+                int cont = 0;
+
+                foreach (char vogal in frase)
+
+                {
+
+                    switch (vogal)
+
+                    {
+
+                        case 'a':
+
+                            cont++;
+
+                            break;
+
+
+
+                        case 'e':
+
+                            cont++;
+
+                            break;
+
+
+
+                        case 'i':
+
+                            cont++;
+
+                            break;
+
+
+
+                        case 'o':
+
+                            cont++;
+
+                            break;
+
+
+
+                        case 'u':
+
+                            cont++;
+
+                            break;
+                    }
+
+                }
+
+                    return cont;
+            }
