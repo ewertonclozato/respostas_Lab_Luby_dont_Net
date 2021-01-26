@@ -1,0 +1,6 @@
+      DELETE FROM 
+          tabela_pessoa as tbp
+      WHERE
+          tbe.pessoa_id = null
+      INNER JOIN
+          tabela_evento as tbe on tbe.pessoa_id = tbp.id
