@@ -1,0 +1,5 @@
+      DELETE FROM 
+          evento
+      WHERE
+          evento LIKE "%Evento B%"
+    
