@@ -1,0 +1,8 @@
+        SELECT
+            tbp.id as 'ID',
+            tbp.nome as 'Nome'
+        FROM
+            tabela_pessoa as tbp
+        INNER JOIN
+            tabela_evento as tbe on tbe.pessoa_id = tbp.id
+        
