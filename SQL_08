@@ -1,0 +1,5 @@
+CREATE TABLE tabela_telefone (
+	id INT PRIMARY KEY NOT NULL,
+	telefone VARCHAR (200),
+	pessoa_id int FOREIGN KEY REFERENCES tabela_pessoa (id)
+)
