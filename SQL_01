@@ -1,6 +1,6 @@
         SELECT
-            tbp.id as 'ID',
-            tbp.nome as 'Nome'
+            tbp.nome as 'Nome',
+            tbe.evento as 'Evento'
         FROM
             tabela_pessoa as tbp
         INNER JOIN
