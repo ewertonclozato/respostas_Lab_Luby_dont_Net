@@ -1,0 +1,4 @@
+        CREATE UNIQUE INDEX 
+            indice 
+        ON 
+            tabela_telefone (telefone ASC)
