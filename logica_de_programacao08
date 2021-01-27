@@ -1,1 +1,33 @@
-
+             string[] vetor = new string[] {
+                                                "John Doe",
+                                                "Jane Doe",
+                                                "Alice Jones",
+                                                "Bobby Louis",
+                                                "Lisa Romero"
+                                           };
+            string BuscarPessoa(string[] vetor1, string nome)
+            {
+                string res = string.Empty;
+                int num = 0;
+                foreach (string n in vetor1)
+                {
+                    if (n.Contains(nome))
+                    {
+                        num++;
+                    }
+                }
+                int cont = 0;
+                int i = 0;
+                string[] vetor2 = new string[num];
+                while (cont < vetor.Length)
+                {
+                    if (vetor[cont].Contains(nome))
+                    {
+                        vetor2[i] = vetor[cont];
+                        i++;
+                    }
+                    cont++;
+                }
+                string r = vetor2[0];
+                return r;
+            }
