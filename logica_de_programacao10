@@ -1,0 +1,26 @@
+            int[] vetor1 = new int[] { 1, 2, 3, 4, 5, 6 };
+            int[] vetor2 = new int[] { 1, 2, 5, 6, 7, 8 };
+            int ObterElementosFaltantes(int[] vetor3, int[] vetor4)
+            {
+                int i = 0;
+                int j = 0;
+                int[] vetorNOVO = new int[4];
+                foreach (int elemento in vetor3)
+                {
+                    if (!vetor4.Contains(elemento))
+                    {
+                        vetorNOVO[i] = elemento;
+                        i++;
+                        j++;
+                    }
+                }
+                foreach (int elemento in vetor4)
+                {
+                    if (!vetor3.Contains(elemento))
+                    {
+                        vetorNOVO[j] = elemento;
+                        j++;
+                    }
+                }int res = vetorNOVO[0];
+                return res;
+            }
