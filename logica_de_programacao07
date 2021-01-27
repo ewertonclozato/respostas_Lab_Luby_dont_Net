@@ -1,13 +1,25 @@
-int[] vetor = new int[] { 1, 2, 3, 4, 5 };
-            int conti = 0;
-            for (int i = 0; i < vetor.Length-1; i++)
+            int[] vetor = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int ObterElementosPares(int[] vetor1)
             {
-                int[] vetorNovo = new int[conti];
-                if (vetor[i] % 2 != 1)
+                int num = 0;
+                foreach (int count in vetor1)
                 {
-                    vetorNovo[0] = vetor[0];
-                    conti++;
+                    if (count % 2 == 0)
+                    {
+                        num++;
+                    }
                 }
-                
-                //Console.WriteLine(vetorNovo);
-            }
+                int cont = 0;
+                int i = 0;
+                int[] vetor2 = new int[num];
+                while (cont < vetor.Length)
+                {
+                    if (vetor[cont] % 2 == 0)
+                    {
+                        vetor2[i] = vetor[cont];
+                        i++;
+                    }
+                    cont++;
+                }
+                int r = vetor2[0];
+                return r;
